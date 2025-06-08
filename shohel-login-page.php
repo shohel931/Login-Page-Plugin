@@ -16,6 +16,36 @@
 
 
 
+/*
+* Option Page for the plugin 
+*/
+function shohel_login_page_option_page(){
+  add_menu_page(
+    __('Login Page Options', 'shohel-login-page'),
+    __('Login Option', 'shohel-login-page'),
+    'manage_options',
+    'shohel-login-page-options',
+    'shohel_login_page_option_page_callback',
+    'dashicons-unlock',
+    101
+  );
+}
+add_action('admin_menu', 'shohel_login_page_option_page');
+
+// Callback function for the option page
+function shohel_login_page_option_page_callback(){
+  ?>
+
+
+<?php
+
+
+
+}
+
+
+
+
 
 
 ?>
